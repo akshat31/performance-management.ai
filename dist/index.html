@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Performance Manager (Demo)</title>
+    <style>
+      :root {
+        --bg:#0b0f19; --card:#141a2a; --muted:#98a2b3; --text:#e6e9f0; --acc:#6ea8fe; --ok:#22c55e; --warn:#f59e0b; --err:#ef4444;
+      }
+      * { box-sizing: border-box; }
+      body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--text); }
+      a { color: var(--acc); text-decoration:none; }
+      .container { max-width: 1080px; margin: 0 auto; padding: 24px; }
+      .nav { display:flex; gap:12px; align-items:center; padding:12px 0; flex-wrap:wrap; }
+      .pill { padding:8px 12px; border-radius:999px; background: var(--card); border:1px solid #23304c; color: var(--text); font-weight:600; }
+      .pill.active { outline:2px solid var(--acc); }
+      .grid { display:grid; gap:16px; }
+      .card { background: var(--card); border:1px solid #23304c; border-radius:16px; padding:16px; }
+      input, select, textarea { background:#0e1525; color:var(--text); border:1px solid #23304c; border-radius:12px; padding:10px 12px; width:100%; }
+      textarea { min-height: 120px; }
+      .row { display:flex; gap:12px; flex-wrap:wrap; }
+      .btn { background: #1f2a44; color: var(--text); border:1px solid #2a3b63; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:700; }
+      .btn.primary { background: var(--acc); color:#0b0f19; border-color: var(--acc); }
+      .btn.warn { background: var(--warn); color:#0b0f19; border-color: var(--warn); }
+      .btn.ghost { background: transparent; border-color:#2a3b63; }
+      .tag { display:inline-block; padding:4px 10px; border-radius:999px; border:1px solid #2a3b63; background:#0e1525; color: var(--muted); font-size:12px; }
+      .kpi { font-size: 28px; font-weight: 800; }
+      table { width:100%; border-collapse: collapse; }
+      th, td { padding:10px; border-bottom:1px solid #23304c; text-align:left; }
+      .muted { color: var(--muted); }
+      .ok { color: var(--ok); } .warn { color: var(--warn); } .err { color: var(--err); }
+      .divider { height:1px; background:#23304c; margin:8px 0 16px; }
+      .notice { background:#0e1525; border:1px dashed #2a3b63; padding:12px; border-radius:12px; font-size:14px; }
+      .small { font-size: 12px; }
+      .right { text-align:right; }
+      .chip { display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:12px; background:#0e1525; border:1px solid #2a3b63; }
+      .space { height: 12px; }
+      .sticky { position: sticky; top: 0; z-index: 50; background: linear-gradient(180deg, rgba(11,15,25,0.9), rgba(11,15,25,0)); padding-top:8px; margin-top:-8px; }
+      .label { font-size:12px; color: var(--muted); margin-bottom:6px; }
+    </style>
+    <script type="module" crossorigin src="/performance-management.ai/assets/index-DVkqFpN6.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
